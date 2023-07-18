@@ -11,11 +11,41 @@ public class Item {
 		this.dueDate = "";
 		this.isAvailable = true;
 	}
+
 	public String toString() {
-		
+<<<<<<< HEAD
+
+=======
+		String itemInfo =  String.format("%-10s %-30s %-10s %-10s", assetTag,
+				description, 
+				showAvailability(isAvailable),
+				dueDate);
+>>>>>>> branch 'master' of https://github.com/22014520-Aisyah/ResourceCentre_Refactor.git
 		// Write your codes here
+<<<<<<< HEAD
+		String itemInfo = String.format("%-10s %-30s %-10s %-10s", assetTag, description,
+				showAvailability(isAvailable), dueDate);
 		return null;
+=======
+		return itemInfo;
+>>>>>>> branch 'master' of https://github.com/22014520-Aisyah/ResourceCentre_Refactor.git
 	}
+<<<<<<< HEAD
+
+	public String showAvailability(boolean isAvailable) {
+=======
+	public static String showAvailability(boolean isAvailable) {
+>>>>>>> branch 'master' of https://github.com/22014520-Aisyah/ResourceCentre_Refactor.git
+		String avail;
+
+		if (isAvailable == true) {
+			avail = "Yes";
+		} else {
+			avail = "No";
+		}
+		return avail;
+	}
+
 	public String getAssetTag() {
 		return assetTag;
 	}
@@ -40,4 +70,3 @@ public class Item {
 		this.isAvailable = isAvailable;
 	}
 }
-
