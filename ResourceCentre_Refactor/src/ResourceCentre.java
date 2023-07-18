@@ -11,7 +11,6 @@ public class ResourceCentre {
 	private static final int OPTION_VIEW = 1;
 	private static final int OPTION_QUIT = 5;
 
-	private static final int OPTION_QUIT = 5;
 
 	public static void main(String[] args) {
 
@@ -237,15 +236,11 @@ public class ResourceCentre {
 		for (int i = 0; i < camcorderList.size(); i++) {
 					
 			String assetTag = camcorderList.get(i).getAssetTag();
-<<<<<<< HEAD
-			boolean availbility = camcorderList.get(i).getIsAvailable();
-			if (tag.equalsIgnoreCase(assetTag)				
-					&& availbility == true) {
-=======
+
 			boolean availibility = camcorderList.get(i).getIsAvailable();
 			if (tag.equalsIgnoreCase(assetTag)				
 					&& availibility == true) {
->>>>>>> branch 'master' of https://github.com/22014520-Aisyah/ResourceCentre_Refactor.git
+
 				
 				camcorderList.get(i).setIsAvailable(false);
 				camcorderList.get(i).setDueDate(dueDate);
