@@ -258,7 +258,7 @@ public class ResourceCentre {
 		}
 	}
 	
-//Hari
+//Hari hari
 	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) {
 		boolean isLoaned = false;
 
